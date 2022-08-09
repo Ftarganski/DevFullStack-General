@@ -1,0 +1,59 @@
+footer {
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    float: left;
+    width: 100%;
+    height: auto;
+    background-color: rgb(6, 33, 44);
+}
+
+footer>div {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer>div>div{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+footer>div>div>a,
+footer>div>div>a:visited {
+    width: 100%;
+    color: rgb(101, 203, 221);
+    padding: 2% 2%;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+footer>div>div>a:hover,
+footer>div>div>a:active {
+    transform: scale(1.5);
+    transition: all 0.5s ease-out;
+}
+
+footer>div>div>p {
+    width: 100%;
+    color: rgb(101, 203, 221);
+    padding: 2% 2%;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    font-size: 80%;
+}
