@@ -1,0 +1,9 @@
+.premios{
+    padding: 2% 3%;
+    margin: 0 0 5px 0;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    border-bottom: 2px solid rgb(44, 86, 94);
+    text-align: justify;
+  }

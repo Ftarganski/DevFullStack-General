@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&display=swap');
 /* font-family: 'Manrope', sans-serif; */
 
+
+@import url("sobre.css");
 @import url("experiencia.css");
 @import url("formacao.css");
 @import url("competencia.css");
-@import url("sobre.css");
+@import url("projetos.css");
+@import url("premios.css");
+@import url("cursos.css");
 @import url("contato.css");
 @import url("footer.css");
+
+
 
 html{
   margin: 0;
@@ -126,36 +132,4 @@ body>div>aside>span{
   box-sizing: border-box;
   border: 2px solid rgb(101, 203, 221);
   border-radius: 50%;
-}
-
-.competencias{
-  background-color: greenyellow;
-  padding: 2% 3%;
-  box-sizing: border-box;
-  display: block;
-  float: left;
-}
-
-.cursos{
-  background-color: yellow;
-  padding: 2% 3%;
-  box-sizing: border-box;
-  display: block;
-  float: left;
-}
-
-.projetos{
-  background-color: greenyellow;
-  padding: 2% 3%;
-  box-sizing: border-box;
-  display: block;
-  float: left;
-}
-
-.premios{
-  background-color: yellow;
-  padding: 2% 3%;
-  box-sizing: border-box;
-  display: block;
-  float: left;
 }
