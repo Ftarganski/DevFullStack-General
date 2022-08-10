@@ -1,0 +1,70 @@
+
+.menu{
+    display: block;
+    float: left;
+  }
+  
+  .menu>ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 10% 0 0 5%;
+    box-sizing: border-box;
+  }
+  
+  .menu>ul>li{
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  .menu>ul>li>a, .menu>ul>li>a:visited{
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .menu>ul>li>a:hover, .menu>ul>li>a:active{
+      border-bottom-color: rgb(101, 203, 221);
+    }
+  
+  .menu>ul>li>a>span{
+      color: rgb(101, 203, 221);
+      text-decoration: none;
+      font-size: 90%;
+  }
+  
+  .contact{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    float: left;
+    margin: 0;
+    padding: 5% 0;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  
+  .contact>a, .contact>a:visited{
+    color: rgb(101, 203, 221);
+    padding: 5% 5%;
+    box-sizing: border-box;
+  }
+  
+  .contact>a:hover, .contact>a:active{
+    transform: scale(1.5);
+    transition: all 0.5s ease-out;
+  }
+  
+  .perfil{
+    width: 80%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(101, 203, 221);
+    border-radius: 50%;
+  }
