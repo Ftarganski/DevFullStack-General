@@ -1,0 +1,72 @@
+/* Notebooks and Desktops
+@media screen and (max-width: 1280px) and (min-width: 1025px) {} */
+
+/* Large Tablet Landscape */
+@media screen and (max-width: 1024px) and (min-width:0) {
+    aside{
+        left: 0;
+        width: 100%;
+        position: fixed;
+        float: left;
+    }
+    
+    .experiencia>div {
+        flex-direction: column;
+    }
+
+    .experiencia>div>div {
+        width: 100%;
+    }
+
+    .experiencia span {
+        width: 15%;
+    }
+
+    .experiencia img {
+        width: 80%;
+    }
+}
+
+
+/* Phone - Landscape and Portrait */
+/* @media screen and (max-width: 600px) and (min-width: 481) { */
+    /* body>div {
+        display: block;
+        flex-direction: none;
+    }
+
+    .aside {
+        display: flex;
+        float: left;
+        flex-direction: column;
+    }
+
+    main {
+        width: 100%;
+        display: flex;
+        float: left;
+    }
+
+    .competencia>div {
+        flex-direction: column;
+    }
+
+    .experiencia>div {
+        flex-direction: column;
+    }
+
+    .experiencia>div>div {
+        width: 100%;
+    }
+
+    .experiencia span {
+        width: 15%;
+    }
+
+    .experiencia img {
+        width: 80%;
+    }
+} */
+
+/* Phone - Landscape and Portrait */
+/* @media screen and (max-width: 480px) and (min-width: 0) {} */

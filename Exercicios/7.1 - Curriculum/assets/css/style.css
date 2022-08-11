@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&display=swap');
 /* font-family: 'Manrope', sans-serif; */
 
+@import url("animations.css");
 @import url("aside.css");
 @import url("sobre.css");
 @import url("experiencia.css");
@@ -11,8 +12,7 @@
 @import url("cursos.css");
 @import url("contato.css");
 @import url("footer.css");
-
-
+@import url("medias.css");
 
 html {
   margin: 0;
@@ -24,6 +24,8 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body>div {
@@ -73,14 +75,4 @@ h3{
   box-sizing: border-box;
 }
 
-@keyframes title {
-  0% {
-    opacity: 0;
-    padding: 0 0 0 70%;
-  }
 
-  100% {
-    opacity: 1;
-    padding: 0;
-  }
-}
