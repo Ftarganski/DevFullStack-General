@@ -2,14 +2,52 @@
 @media screen and (max-width: 1280px) and (min-width: 1025px) {} */
 
 /* Large Tablet Landscape */
-@media screen and (max-width: 1024px) and (min-width:0) {
-    aside{
+@media screen and (max-width: 1024px) and (min-width:0px) {
+    .card>img {
+        display: none;
+    }
+
+    .barra {
         left: 0;
         width: 100%;
-        position: fixed;
-        float: left;
+        height: 48px;
+        background: rgb(6, 33, 44);
+        z-index: 999;
     }
-    
+
+    .menu>ul {
+        flex-direction: ROW;
+        padding: 0 5%;
+        justify-content: space-between;
+    }
+
+    .menu>ul>li {
+        width: auto;
+        margin: 8px 0;
+        font-size: 94%;
+    }
+
+    .sobre>h3,
+    .experiencia>h3,
+    .formacao>h3,
+    .hardskills>h3,
+    .softskills>h3,
+    .cursos>h3,
+    .premios>h3,
+    .contatos>h3 {
+        margin: 40px 0 2% 0;
+        box-sizing: border-box;
+    }
+
+    body>div>aside>span,
+    .contact {
+        display: none;
+    }
+
+    .principal {
+        width: 100%;
+    }
+
     .experiencia>div {
         flex-direction: column;
     }
@@ -28,45 +66,60 @@
 }
 
 
+@media screen and (max-width: 800px) and (min-width: 0) {
+    .card>img {
+        display: none;
+    }
+
+    .menu>ul {
+        justify-content: space-between;
+    }
+
+    .menu>ul>li {
+        font-size: 85%;
+    }
+
+    .hardskills>div {
+        flex-direction: column;
+    }
+
+    .menu>ul>li>a>span {
+        display: none;
+    }
+
+    .hardpercent {
+        height: 22px;
+        margin: 0 0 2% 0;
+    }
+
+    .html,
+    .css,
+    .react,
+    .java,
+    .boot,
+    .manege,
+    .leader,
+    .cad,
+    .photo,
+    .video {
+        font-size: 100%;
+    }
+
+    .softpercent {
+        height: 22px;
+    }
+
+    .fast,
+    .adap,
+    .resi,
+    .prio {
+        font-size: 100%;
+    }
+}
+
 /* Phone - Landscape and Portrait */
-/* @media screen and (max-width: 600px) and (min-width: 481) { */
-    /* body>div {
-        display: block;
-        flex-direction: none;
+@media screen and (max-width: 600px) and (min-width: 0) {
+    .menu>ul>li {
+        font-size: 64%;
     }
-
-    .aside {
-        display: flex;
-        float: left;
-        flex-direction: column;
-    }
-
-    main {
-        width: 100%;
-        display: flex;
-        float: left;
-    }
-
-    .competencia>div {
-        flex-direction: column;
-    }
-
-    .experiencia>div {
-        flex-direction: column;
-    }
-
-    .experiencia>div>div {
-        width: 100%;
-    }
-
-    .experiencia span {
-        width: 15%;
-    }
-
-    .experiencia img {
-        width: 80%;
-    }
-} */
-
-/* Phone - Landscape and Portrait */
-/* @media screen and (max-width: 480px) and (min-width: 0) {} */
+}

@@ -1,4 +1,4 @@
-.competencia {
+.hardskills {
   padding: 2% 3%;
   margin: 0 0 5px 0;
   display: flex;
@@ -7,14 +7,14 @@
   box-sizing: border-box;
 }
 
-.competencia>div {
+.hardskills>div {
   display: flex;
   width: 100%;
   padding: 0 0 2% 0;
   flex-direction: row;
 }
 
-.competencia>div>div {
+.hardskills>div>div {
   width: 100%;
   margin: 0 3% 0 0;
   box-sizing: border-box;
@@ -24,17 +24,17 @@
   flex-wrap: wrap;
 }
 
-.competencia>div>div>p {
+.hardskills>div>div>p {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-.competencia>div>div>p>i {
+.hardskills>div>div>p>i {
   font-size: 150%;
 }
 
-.divpercent {
+.hardpercent {
   text-align: right;
   background-color: rgb(168, 223, 233);
   width: 100%;
@@ -65,33 +65,33 @@
 .react,
 .java,
 .boot {
-  animation: A15 3s normal forwards linear 2s;
+  animation: H15 3s normal forwards linear 2s;
 }
 
 .css {
-  animation: A25 3s normal forwards linear 2s;
+  animation: H25 3s normal forwards linear 2s;
 }
 
 .video {
-  animation: A70 3s normal forwards linear 2s;
+  animation: H70 3s normal forwards linear 2s;
 }
 
 .html,
 .leader {
-  animation: A75 3s normal forwards linear 2s;
+  animation: H75 3s normal forwards linear 2s;
 }
 
 .manege {
-  animation: A80 3s normal forwards linear 2s;
+  animation: H80 3s normal forwards linear 2s;
 }
 
 .cad,
 .photo {
-  animation: A85 3s normal forwards linear 2s;
+  animation: H85 3s normal forwards linear 2s;
 }
 
 
-@keyframes A25 {
+@keyframes H25 {
   0% {
     color: rgb(168, 223, 233);
     width: 0%;
@@ -100,14 +100,14 @@
   }
 
   100% {
-    color: white;
+    color: rgb(168, 223, 233);
     width: 25%;
     opacity: 1;
     background-color: rgb(6, 33, 44);
   }
 }
 
-@keyframes A15 {
+@keyframes H15 {
   0% {
     color: rgb(168, 223, 233);
     width: 0%;
@@ -116,14 +116,14 @@
   }
 
   100% {
-    color: white;
+    color: rgb(168, 223, 233);
     width: 15%;
     opacity: 1;
     background-color: rgb(6, 33, 44);
   }
 }
 
-@keyframes A70 {
+@keyframes H70 {
   0% {
     color: rgb(168, 223, 233);
     width: 0%;
@@ -132,14 +132,14 @@
   }
 
   100% {
-    color: white;
+    color: rgb(168, 223, 233);
     width: 70%;
     opacity: 1;
     background-color: rgb(6, 33, 44);
   }
 }
 
-@keyframes A75 {
+@keyframes H75 {
   0% {
     color: rgb(168, 223, 233);
     width: 0%;
@@ -148,14 +148,14 @@
   }
 
   100% {
-    color: white;
+    color: rgb(168, 223, 233);
     width: 75%;
     opacity: 1;
     background-color: rgb(6, 33, 44);
   }
 }
 
-@keyframes A80 {
+@keyframes H80 {
   0% {
     color: rgb(168, 223, 233);
     width: 0%;
@@ -164,14 +164,14 @@
   }
 
   100% {
-    color: white;
+    color:rgb(168, 223, 233);
     width: 80%;
     opacity: 1;
     background-color: rgb(6, 33, 44);
   }
 }
 
-@keyframes A85 {
+@keyframes H85 {
   0% {
     color: rgb(168, 223, 233);
     width: 0%;
@@ -180,7 +180,7 @@
   }
 
   100% {
-    color: white;
+    color: rgb(168, 223, 233);
     width: 85%;
     opacity: 1;
     background-color: rgb(6, 33, 44);

@@ -6,8 +6,8 @@
 @import url("sobre.css");
 @import url("experiencia.css");
 @import url("formacao.css");
-@import url("competencia.css");
-@import url("projetos.css");
+@import url("hardskills.css");
+@import url("softskills.css");
 @import url("premios.css");
 @import url("cursos.css");
 @import url("contato.css");
@@ -60,19 +60,12 @@ body>div>main {
   box-sizing: border-box;
 }
 
-body>div>aside>span {
-  text-align: center;
-  padding: 10% 0 0 0;
-  box-sizing: border-box;
-}
-
 h3{
   width: 100%;
   display: block;
-  margin: 3% 0 5% 0;
+  margin: 3% 0 3% 0;
   text-align: left;
   animation: title 2s normal forwards ease-in-out;
   box-sizing: border-box;
 }
-
 

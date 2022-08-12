@@ -1,0 +1,137 @@
+  .softskills {
+    padding: 2% 3%;
+    margin: 0 0 5px 0;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid rgb(44, 86, 94);
+    box-sizing: border-box;
+  }
+
+  .softskills>div {
+    display: flex;
+    width: 100%;
+    padding: 0 0 2% 0;
+    flex-direction: row;
+  }
+
+  .softskills>div>div {
+    width: 100%;
+    margin: 0 3% 0 0;
+    box-sizing: border-box;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .softskills>div>div>p {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .softskills>div>div>p>i {
+    font-size: 150%;
+  }
+
+  .softpercent {
+    text-align: right;
+    background-color: rgb(6, 33, 44);
+    width: 100%;
+    height: 19px;
+    padding: 0;
+    margin: 0 0 2% 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .fast,
+  .adap,
+  .resi,
+  .prio {
+    font-size: 90%;
+    border-radius: 5px;
+    color: rgb(6, 33, 44);
+    padding: 0 5px 0 0;
+    box-sizing: border-box;
+  }
+
+  .resi {
+    animation: S70 3s normal forwards linear 2s;
+  }
+
+  .fast {
+    animation: S75 3s normal forwards linear 2s;
+  }
+
+  .prio {
+    animation: S80 3s normal forwards linear 2s;
+  }
+
+  .adap {
+    animation: S85 3s normal forwards linear 2s;
+  }
+
+  @keyframes S70 {
+    0% {
+      color: rgb(6, 33, 44);
+      width: 0%;
+      opacity: 0;
+      background-color: rgb(168, 223, 233);
+    }
+
+    100% {
+      color: rgb(6, 33, 44);
+      width: 70%;
+      opacity: 1;
+      background-color: rgb(168, 223, 233);
+    }
+  }
+
+  @keyframes S75 {
+    0% {
+      color: rgb(6, 33, 44);
+      width: 0%;
+      opacity: 0;
+      background-color: rgb(168, 223, 233);
+    }
+
+    100% {
+      color: rgb(6, 33, 44);
+      width: 75%;
+      opacity: 1;
+      background-color: rgb(168, 223, 233);
+    }
+  }
+
+  @keyframes S80 {
+    0% {
+      color: rgb(6, 33, 44);
+      width: 0%;
+      opacity: 0;
+      background-color: rgb(168, 223, 233);
+    }
+
+    100% {
+      color: rgb(6, 33, 44);
+      width: 80%;
+      opacity: 1;
+      background-color: rgb(168, 223, 233);
+    }
+  }
+
+  @keyframes S85 {
+    0% {
+      color: rgb(6, 33, 44);
+      width: 0%;
+      opacity: 0;
+      background-color: rgb(168, 223, 233);
+    }
+
+    100% {
+      color: rgb(6, 33, 44);
+      width: 85%;
+      opacity: 1;
+      background-color: rgb(168, 223, 233);
+    }
+  }
