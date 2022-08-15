@@ -1,0 +1,28 @@
+.main {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: center;
+} 
+
+
+.img-carousel {
+  width: 100%;
+  height: calc(100vh - 56px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-carousel--1 {
+  background-image: url('../img/trek/001.jpeg');
+}
+
+.img-carousel--2 {
+  background-image: url('../img/trek/002.jpg');
+}
+
+.img-carousel--3 {
+  background-image: url('../img/trek/003.jpg');
+}
