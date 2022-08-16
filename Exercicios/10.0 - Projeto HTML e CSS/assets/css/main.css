@@ -1,28 +1,41 @@
 .main {
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    position: center;
-} 
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  position: center;
+}
 
+.slide>div>ul {
+  list-style: none;
+  padding: 0;
+}
 
-.img-carousel {
+.slide>div>ul>li {
+  display: block;
+  float: left;
+  width: 33.33%;
+  height: auto;
+}
+
+.slide>div>ul>li>button {
+  border: none;
+}
+
+.slide>div>ul>li>button>img {
   width: 100%;
-  height: calc(100vh - 56px);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  height: 100%;
+  padding: 0 2%;
 }
 
-.img-carousel--1 {
-  background-image: url('../img/trek/001.jpeg');
+.carousel-control-prev {
+  justify-content: left;
+  width: auto;
+  padding: 0 0 0 3%;
 }
 
-.img-carousel--2 {
-  background-image: url('../img/trek/002.jpg');
-}
-
-.img-carousel--3 {
-  background-image: url('../img/trek/003.jpg');
+.carousel-control-next{
+  justify-content: right;
+  width: auto;
+  padding: 0 3% 0 0;
 }

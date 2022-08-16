@@ -1,5 +1,7 @@
 .nav{
     background-color:transparent;
+    border: none;
+    box-shadow: none;
 }
 
 .nav>ul {
@@ -33,4 +35,8 @@
 .nav>ul>li>a:active {
     border-bottom-color: white;
     box-sizing: border-box;
+}
+
+.img-fluid{
+    width: 70%;
 }
