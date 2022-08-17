@@ -6,6 +6,42 @@
   position: center;
 }
 
+.h4 {
+  margin: 0;
+  padding: 2% 0 0 0;
+  box-sizing: border-box;
+}
+
+.sct-carousel {
+  margin: 0 0 2% 0;
+  padding: 0;
+}
+
+.img-carousel {
+  width: 100%;
+  height: calc(100vh);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-carousel--1 {
+  background-image: url('../img/trek/003.jpg');
+}
+
+.img-carousel--2 {
+  background-image: url('../img/trek/002.jpg');
+}
+
+.img-carousel--3 {
+  background-image: url('../img/trek/003.jpg');
+}
+
+.title-slide, .p-slide {
+  color: white;
+  text-shadow: 10em black;
+}
+
 .slide>div>ul {
   list-style: none;
   padding: 0;
@@ -22,20 +58,52 @@
   border: none;
 }
 
+.slide>div>ul>li>button:hover {
+  transform: scale(1.025);
+  transition: all 0.5s ease-out;
+}
+
 .slide>div>ul>li>button>img {
   width: 100%;
   height: 100%;
-  padding: 0 2%;
+  padding: 0;
 }
 
-.carousel-control-prev {
+.carousel-mod-prev {
   justify-content: left;
   width: auto;
-  padding: 0 0 0 3%;
+  padding: 0 0 0 0.8%;
+  height: 100%;
 }
 
-.carousel-control-next{
+.carousel-mod-next {
   justify-content: right;
   width: auto;
-  padding: 0 3% 0 0;
+  padding: 0 0.8% 0 0;
+  height: 100%;
+}
+
+.btn-mod {
+  padding: 2%;
+  box-sizing: border-box;
+  border: none;
+}
+
+.icon-mod:hover {
+  background-color: black;
+  opacity: 50%;
+  height: 100%;
+  height: 90%;
+}
+
+.img-mod {
+  width: 100%;
+}
+
+.icone{
+  height: 86%;
+  background-color: rgb(116, 116, 116);
+  opacity: 40%;
+  margin-bottom: 50%;
+  box-sizing: border-box;
 }

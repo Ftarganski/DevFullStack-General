@@ -4,6 +4,7 @@
 @import url('media.css');
 @import url('header.css');
 @import url('main.css');
+@import url('footer.css');
 
 html,
 body {
@@ -11,7 +12,7 @@ body {
     height: 100%;
     margin: 0 auto;
     padding: 0;
-    background-color: rgb(168, 168, 168);
+    background-color: rgb(255, 255, 255);
 }
 
 * {
@@ -19,13 +20,5 @@ body {
     color: rgb(0, 0, 0);
 }
 
-.header {
-    margin: 0;
-    padding: 0;
-}
 
 
-.footer {
-    margin: 0;
-    padding: 0;
-}

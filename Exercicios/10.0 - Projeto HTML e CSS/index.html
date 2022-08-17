@@ -26,201 +26,364 @@
 
                     <nav class="nav">
                         <ul>
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">link1</a></li>
-                            <li><a href="#">link2</a></li>
-                            <li><a href="#">link3</a></li>
-                            <li><a href="#">link4</a></li>
-                            <li><a href="#">link5</a></li>
+                            <li><a href="#home-lk">Home</a></li>
+                            <li><a href="#marcas-lk">Marcas</a></li>
+                            <li><a href="#bicicletas-lk">Bicicletas</a></li>
+                            <li><a href="#">Atletas</a></li>
+                            <li><a href="#">Competições</a></li>
+                            <li><a href="#">Equipamentos</a></li>
                         </ul>
                     </nav>
 
                 </div>
-                <div class="col-2">
+                <div class="col-2 nav-login">
                     login
                 </div>
             </div>
         </div>
     </header>
 
+    <section id="home-lk" class="container-fluid sct-carousel">
+        <div id="carouselcapa" class="carousel slide carousel-fade" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselcapa" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselcapa" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselcapa" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class='img-carousel img-carousel--1'></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="title-slide">First slide label</h5>
+                        <p class="p-slide">Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class='img-carousel img-carousel--2'></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="title-slide">Second slide label</h5>
+                        <p class="p-slide">Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class='img-carousel img-carousel--3'></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="title-slide">Third slide label</h5>
+                        <p class="p-slide">Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselcapa" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselcapa" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    </section>
+
     <main class="container-fluid col-10">
 
-                <section>
+        <section id="marcas-lk">
             <div>
-                <h4>Marcas</h4>
+                <h4 class="h4">Marcas</h4>
             </div>
-            <div id="marcas" class="carousel slide" data-bs-ride="carousel">
+            <div id="marcas" class="carousel slide carousel-mod" data-interval="false">
                 <div class="carousel-inner">
                     <ul class="carousel-item active">
                         <li>
-                            <button type="button" class="btn" data-bs-toggle="modal"
-                                data-bs-target="#Modal">
-                                <img src="./assets/img/trek/002.jpg" alt="...">
+                            <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                                data-bs-target="#Modalmarcas">
+                                <img src="./assets/img/marcas/bianchi.jpg" alt="...">
                             </button>
-                            
+
                         </li>
                         <li>
-                            <button type="button" class="btn" data-bs-toggle="modal"
-                                data-bs-target="#Modal">
-                                <img src="./assets/img/trek/002.jpg" alt="...">
-                            </button>
-                        </li><li>
-                            <button type="button" class="btn" data-bs-toggle="modal"
-                                data-bs-target="#Modal">
-                                <img src="./assets/img/trek/002.jpg" alt="...">
-                            </button>
-                        </li>
-                    </ul>
-                    <ul class="carousel-item">
-                        <li>
-                            <button type="button" class="btn" data-bs-toggle="modal"
-                                data-bs-target="#Modal">
-                                <img src="./assets/img/trek/002.jpg" alt="...">
+                            <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                                data-bs-target="#Modalmarcas">
+                                <img src="./assets/img/marcas/bmc.jpg" alt="...">
                             </button>
                         </li>
                         <li>
-                            <button type="button" class="btn" data-bs-toggle="modal"
-                                data-bs-target="#Modal">
-                                <img src="./assets/img/trek/002.jpg"  alt="...">
-                            </button>
-                        </li><li>
-                            <button type="button" class="btn" data-bs-toggle="modal"
-                                data-bs-target="#Modal">
-                                <img src="./assets/img/trek/002.jpg"  alt="...">
+                            <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                                data-bs-target="#Modalmarcas">
+                                <img src="./assets/img/marcas/cannondale.jpg" alt="...">
                             </button>
                         </li>
                     </ul>
                     <ul class="carousel-item">
                         <li>
-                            <button type="button" class="btn" data-bs-toggle="modal"
-                                data-bs-target="#Modal">
-                                <img src="./assets/img/trek/002.jpg" alt="...">
+                            <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                                data-bs-target="#Modalmarcas">
+                                <img src="./assets/img/marcas/cervelo.jpg" alt="...">
                             </button>
                         </li>
                         <li>
-                            <button type="button" class="btn" data-bs-toggle="modal"
-                                data-bs-target="#Modal">
-                                <img src="./assets/img/trek/002.jpg"  alt="...">
+                            <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                                data-bs-target="#Modalmarcas">
+                                <img src="./assets/img/marcas/colnago.jpg" alt="...">
                             </button>
-                        </li><li>
-                            <button type="button" class="btn" data-bs-toggle="modal"
-                                data-bs-target="#Modal">
-                                <img src="./assets/img/trek/002.jpg"  alt="...">
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                                data-bs-target="#Modalmarcas">
+                                <img src="./assets/img/marcas/merida.jpg" alt="...">
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="carousel-item">
+                        <li>
+                            <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                                data-bs-target="#Modalmarcas">
+                                <img src="./assets/img/marcas/orbea.jpg" alt="...">
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                                data-bs-target="#Modalmarcas">
+                                <img src="./assets/img/marcas/raleigh.jpg" alt="...">
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                                data-bs-target="#Modalmarcas">
+                                <img src="./assets/img/marcas/trek.jpg" alt="...">
                             </button>
                         </li>
                     </ul>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#marcas" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <button class="carousel-control-prev carousel-mod-prev" type="button" data-bs-target="#marcas"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon icone" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#marcas" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <button class="carousel-control-next carousel-mod-next" type="button" data-bs-target="#marcas"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon icone" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
             </div>
+
+            <!-- Modal Marcas -->
+            <div class="modal fade modal" id="Modalmarcas" tabindex="-1" aria-labelledby="ModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img class="img-mod" src="./assets/img/marcas/trek.jpg" alt="">
+                        </div>
+                        <div class="modal-body">
+                            <!-- ajustar conteúdo -->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-mod" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
-        <section>
+        <section id="bicicletas-lk">
             <div>
-                <h4>Modelos</h4>
+                <h4 class="h4">Bicicletas</h4>
             </div>
-            <div id="modelos" class="carousel slide" data-bs-ride="carousel">
+            <div id="bicicletas" class="carousel slide" data-interval="false">
                 <div class="carousel-inner">
                     <ul class="carousel-item active">
                         <li>
-                            <button type="button" class="btn" data-bs-toggle="modal"
-                                data-bs-target="#Modal">
-                                <img src="./assets/img/trek/002.jpg" alt="...">
+                            <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                                data-bs-target="#Modalbike">
+                                <img src="./assets/img/bicicletas/bike-001.jpg" alt="...">
                             </button>
                         </li>
                         <li>
-                            <button type="button" class="btn" data-bs-toggle="modal"
-                                data-bs-target="#Modal">
-                                <img src="./assets/img/trek/002.jpg" alt="...">
-                            </button>
-                        </li><li>
-                            <button type="button" class="btn" data-bs-toggle="modal"
-                                data-bs-target="#Modal">
-                                <img src="./assets/img/trek/002.jpg" alt="...">
-                            </button>
-                        </li>
-                    </ul>
-                    <ul class="carousel-item">
-                        <li>
-                            <button type="button" class="btn" data-bs-toggle="modal"
-                                data-bs-target="#Modal">
-                                <img src="./assets/img/trek/002.jpg" alt="...">
+                            <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                                data-bs-target="#Modalbike">
+                                <img src="./assets/img/bicicletas/bike-002.jpg" alt="...">
                             </button>
                         </li>
                         <li>
-                            <button type="button" class="btn" data-bs-toggle="modal"
-                                data-bs-target="#Modal">
-                                <img src="./assets/img/trek/002.jpg"  alt="...">
-                            </button>
-                        </li><li>
-                            <button type="button" class="btn" data-bs-toggle="modal"
-                                data-bs-target="#Modal">
-                                <img src="./assets/img/trek/002.jpg"  alt="...">
+                            <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                                data-bs-target="#Modalbike">
+                                <img src="./assets/img/bicicletas/bike-003.jpg" alt="...">
                             </button>
                         </li>
                     </ul>
                     <ul class="carousel-item">
                         <li>
-                            <button type="button" class="btn" data-bs-toggle="modal"
-                                data-bs-target="#Modal">
-                                <img src="./assets/img/trek/002.jpg" alt="...">
+                            <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                                data-bs-target="#Modalbike">
+                                <img src="./assets/img/bicicletas/bike-004.jpg" alt="...">
                             </button>
                         </li>
                         <li>
-                            <button type="button" class="btn" data-bs-toggle="modal"
-                                data-bs-target="#Modal">
-                                <img src="./assets/img/trek/002.jpg"  alt="...">
+                            <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                                data-bs-target="#Modalbike">
+                                <img src="./assets/img/bicicletas/bike-005.jpg" alt="...">
                             </button>
-                        </li><li>
-                            <button type="button" class="btn" data-bs-toggle="modal"
-                                data-bs-target="#Modal">
-                                <img src="./assets/img/trek/002.jpg"  alt="...">
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                                data-bs-target="#Modalbike">
+                                <img src="./assets/img/bicicletas/bike-006.jpg" alt="...">
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="carousel-item">
+                        <li>
+                            <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                                data-bs-target="#Modalbike">
+                                <img src="./assets/img/bicicletas/bike-007.jpg" alt="...">
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                                data-bs-target="#Modalbike">
+                                <img src="./assets/img/bicicletas/bike-008.jpg" alt="...">
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                                data-bs-target="#Modalbike">
+                                <img src="./assets/img/bicicletas/bike-009.jpg" alt="...">
                             </button>
                         </li>
                     </ul>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#modelos" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <button class="carousel-control-prev carousel-mod-prev" type="button" data-bs-target="#bicicletas"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon icone" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#modelos" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <button class="carousel-control-next carousel-mod-next" type="button" data-bs-target="#bicicletas"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon icone" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
             </div>
+
+            <!-- Modal Bikes -->
+            <div class="modal fade modal" id="Modalbike" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img class="img-mod" src="./assets/img/bicicletas/bike-001.jpg" alt="">
+                        </div>
+                        <div class="modal-body">
+                            <!-- ajustar conteúdo -->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-mod" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
-
-<!-- Modal Base -->
-<div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-
-        <div class="modal-content">
-
-            <div class="modal-header">
-                <h5 class="modal-title" id="ModalLabel">Modal title</h5>
+        <section id="atletas-lk">
+            <div>
+                <h4 class="h4">Atletas</h4>
+            </div>
+            <div id="atletas" class="carousel slide" data-interval="false">
+                <div class="carousel-inner">
+                    <ul class="carousel-item active">
+                        <li>
+                            <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                                data-bs-target="#Modalatletas">
+                                <img src="./assets/img/atletas/c-laporte.png" alt="...">
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                                data-bs-target="#Modalatletas">
+                                <img src="./assets/img/atletas/d-groenewegen.png" alt="...">
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                                data-bs-target="#Modalatletas">
+                                <img src="./assets/img/atletas/h-houle.png" alt="...">
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="carousel-item">
+                        <li>
+                            <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                                data-bs-target="#Modalatletas">
+                                <img src="./assets/img/atletas/j-philipsen.png" alt="...">
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                                data-bs-target="#Modalatletas">
+                                <img src="./assets/img/atletas/j-vingegaard.png" alt="...">
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                                data-bs-target="#Modalatletas">
+                                <img src="./assets/img/atletas/m-matthews.png" alt="...">
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="carousel-item">
+                        <li>
+                            <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                                data-bs-target="#Modalatletas">
+                                <img src="./assets/img/atletas/t-pogacar.png" alt="...">
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                                data-bs-target="#Modalatletas">
+                                <img src="./assets/img/atletas/w-van-aert.png" alt="...">
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                                data-bs-target="#Modalatletas">
+                                <img src="./assets/img/atletas/y-lampaert.png" alt="...">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <button class="carousel-control-prev carousel-mod-prev" type="button" data-bs-target="#atletas"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon icone" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next carousel-mod-next" type="button" data-bs-target="#atletas"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon icone" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
             </div>
 
-            <div class="modal-body">...</div>
-
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <!-- Modal Atletas -->
+            <div class="modal fade modal" id="Modalatletas" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img class="img-mod" src="./assets/img/atletas/c-laporte.png" alt="">
+                        </div>
+                        <div class="modal-body">
+                            <!-- ajustar conteúdo -->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-mod" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-        </div>
-
-    </div>
-</div>
+        </section>
 
 
     </main>
@@ -229,15 +392,35 @@
     <footer class="container-fluid footer">
         <div class="container text-center">
             <div class="row">
-                <div class="col-2">
+
+                <div class="col-2 foot-menu">
                     menu
                 </div>
-                <div class="col-8">
-                    redes
+
+                <div class="col-8 redes">
+                    <a href="https://www.linkedin.com/in/targanski" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Ftarganski" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.behance.net/ftarganski" target="_blank"><i
+                            class="fa-brands fa-behance"></i></a>
+                    <a href="https://www.hackerrank.com/ftarganski" target="_blank"><i
+                            class="fa-brands fa-hackerrank"></i></a>
+                    <a href="https://www.instagram.com/ftarganski" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/c/PedalFloripaMTB?sub_confirmation=1" target="_blank"><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <a href="https://twitter.com/ftarganski" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/ftarganski" target="_blank"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="mailto:francis@targanski.com" target="_blank"><i class="fa-solid fa-at"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=5548988222992" target="_blank"><i
+                            class="fa-brands fa-whatsapp"></i></a>
                 </div>
-                <div class="col-2">
+
+                <div class="col-2 foot-logo">
                     logotipo
                 </div>
+
             </div>
         </div>
     </footer>

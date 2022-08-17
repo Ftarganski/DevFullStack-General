@@ -1,11 +1,27 @@
+.header {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: block;
+    position: fixed;
+    z-index: 999;
+}
+
+
 .nav{
     background-color:transparent;
     border: none;
     box-shadow: none;
+    height: 100%;
+}
+
+.nav-login{
+    color:rgb(255, 255, 255);
 }
 
 .nav>ul {
     display: flex;
+    justify-content: flex-end;
     margin: 0;
     padding: 0 0 0 2%;
     height: 100%;
@@ -18,13 +34,15 @@
     list-style: none;
     margin: 0 1%;
     box-sizing: border-box;
+    height: 100%;
 }
 
 .nav>ul>li>a,
 .nav>ul>li>a:visited {
+    height: 30%;
     text-decoration: none;
     text-transform: uppercase;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 12px;
     padding: 6px 0 4px 0;
     border-bottom: 2px solid transparent;
@@ -33,10 +51,11 @@
 
 .nav>ul>li>a:hover,
 .nav>ul>li>a:active {
-    border-bottom-color: white;
+    border-bottom-color: rgb(255, 255, 255);
     box-sizing: border-box;
 }
 
 .img-fluid{
-    width: 70%;
+    width: 65%;
+    padding: 5% 0;
 }
