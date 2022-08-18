@@ -8,7 +8,7 @@
 
 .h4 {
   margin: 0;
-  padding: 2% 0 0 0;
+  padding: 15% 0 3% 0;
   box-sizing: border-box;
 }
 
@@ -37,10 +37,26 @@
   background-image: url('../img/wall/wallpaper-003.jpeg');
 }
 
-.title-slide,
+.button-mood [data-bs-target]{
+  height: 25px;
+  width: 25px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+
+.title-slide{
+  font-size: 250%;
+  font-style: italic;
+  color: white;
+  text-shadow: 2px 2px black;
+  margin: 0 0 1% 0;
+}
+
 .p-slide {
   color: white;
   text-shadow: 2px 2px black;
+  margin: 0 0 3% 0;
 }
 
 .slide>div>ul {
@@ -107,6 +123,10 @@
   width: 70%;
 }
 
+.img-equip {
+  width: 90%;
+}
+
 .carousel-mod-prev {
   justify-content: left;
   width: auto;
@@ -140,4 +160,82 @@
 
 .icone {
   filter: invert(1);
+}
+
+.modal-body {
+  display: flex;
+}
+
+.modal-body>.col-4 {
+  text-align: center;
+}
+
+.modal-body>.col-8 {
+  box-sizing: border-box;
+  padding: 0 0 0 2%;
+  box-sizing: border-box;
+}
+
+.modal-body>.col-8>ul,
+.modal-body>.col-12>ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.modal-body>.col-8>ul>li>i {
+  color: goldenrod;
+}
+
+.modal-body>.col-8>ul>li>a>img {
+  width: 50%;
+}
+
+.modal-header-mood {
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.modal-header-mood>.col-12 {
+  text-align: center;
+}
+
+.modal-header-mood>.col-12>img {
+  width: 50%;
+}
+
+.modal-footer-mood {
+  border-top: 1px solid rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+}
+
+.modal-footer>.col-9 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 65%;
+}
+
+.modal-footer>.col-3 {
+  width: 30%;
+  box-sizing: border-box;
+  margin: 0;
+  text-align: center;
+}
+
+.modal-body-bike-mood,
+.modal-body-equip-mood {
+  flex-direction: column;
+}
+
+.modal-body-marcas-mood {
+  flex-direction: column;
+}
+
+.modal-body-marcas-mood>.col-12>h4 {
+  text-align: center;
+}
+
+.modal-body-marcas-mood>.col-12>p {
+  text-align: justify;
 }
