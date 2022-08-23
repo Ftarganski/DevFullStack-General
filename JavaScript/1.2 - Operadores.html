@@ -14,10 +14,10 @@
         const prazo = parseInt(prompt(`Digite em quantos meses você deseja pagar o empréstimo`))
         const juros = 0.02
 
-        total = (valor * Math.pow((1 + juros), prazo)).toFixed(2)
-        parcela = (total / prazo).toFixed(2)
+        total = (valor * Math.pow((1 + juros), prazo))
+        parcela = (total / prazo)
 
-        console.log(`O empréstimo solicitado no valor de R$ ${valor}, com a taxa de juros considerada de ${juros}%, será pago em ${prazo} parcelas de R$ ${parcela}, resultando em um valor total de R$ ${total}.`)
+        alert(`O empréstimo solicitado no valor de R$ ${valor.toFixed(2).replace('.', ',')}, com a taxa de juros considerada de ${juros}%, será pago em ${prazo} parcelas de R$ ${parcela.toFixed(2).replace('.', ',')}, resultando em um valor total de R$ ${total.toFixed(2).replace('.', ',')}.`)
     </script>
 </body>
 
