@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const valor = parseFloat(prompt(`Digite o valor solicitado:`))
+        const prazo = parseInt(prompt(`Digite em quantos meses você deseja pagar o empréstimo`))
+        const juros = 0.02
+
+        total = (valor * Math.pow((1 + juros), prazo)).toFixed(2)
+        parcela = (total / prazo).toFixed(2)
+
+        console.log(`O empréstimo solicitado no valor de R$ ${valor}, com a taxa de juros considerada de ${juros}%, será pago em ${prazo} parcelas de R$ ${parcela}, resultando em um valor total de R$ ${total}.`)
+    </script>
+</body>
+
+</html>
+
+<!-- Faça um programa que pergunte quanto a pessoa quer emprestado, faça o cálculo do empréstimo a juros compostos. Para
+fazer o empréstimo solicite:
+– Quanto ela quer emprestado?
+– Em quantos meses ela vai pagar?
+
+*A Taxa de juros será de 2% ao mês.
+
+Segue a fórmula dos Juros compostos: M = C x (1+i)^t ‌
+
+M é o valor final após a aplicação dos juros
+C o valor que a pessoa vai pegar emprestrado
+i é a taxa de juros
+t é o tempo
+
+Ao final mostre quanto a pessoa pagará após a aplicação dos juros
+
+DICA: Use Math.pow() para o cálculo de potência que está sendo simbolizado pelo acento circunflexo (^) sabendo que ^t é
+o mesmo que Math.pow((1+i), t). Com uma dica dessa fica até fácil. -->
