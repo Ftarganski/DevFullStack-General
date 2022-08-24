@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let sexo = prompt(`Digite seu sexo (F para Feminino e M para Masculino):`);
+        let altura = prompt(`Digite sua altura em metros:`);
+        altura = altura.replace(",", ".");
+
+        if (sexo == "F" || sexo == "f") {
+            pesoideal = (62.1 * b) - 58;
+            alert(`Minha amiga, o seu peso ideal é de ${pesoideal.toFixed(2)} kg, então fecha a boca e para de comer!`)
+        }
+        else if (sexo == "M" || sexo == "m") {
+            pesoideal = (72.7 * b) - 44.7;
+            alert(`Homem que é homem não se preocupa com o peso, mas já que você é um curioso, e sabe que a sua barriga de cerveja não vai diminuir, o seu peso ideal é de ${pesoideal.toFixed(2)} kg`)
+        }
+        else {
+            alert(`Se chegou até aqui é porque fez besteira! Você deve digitar F ou M no campo sexo!`)
+        }
+    </script>
+
+</body>
+
+</html>
+
+<!-- Tendo como dados de entrada a altura e o sexo de uma pessoa, construa um algoritmo que
+calcule seu peso ideal, utilizando as seguintes fórmulas:
+● para homens: (72.7 * h) – 58;
+● para mulheres: (62.1 * h) – 44.7. -->
