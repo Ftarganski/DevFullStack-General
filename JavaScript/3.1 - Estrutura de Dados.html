@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        let arrayNumber = [];
+        for (let i = 0; i < 10; i++) {
+            arrayNumber.push(getRandom(100, 999));
+        }
+        arrayNumber.sort();
+
+        console.log(arrayNumber)
+
+    </script>
+</body>
+
+</html>
+
+<!-- Crie um script que receba um array de qualquer tamanho e ordene seus elementos na ordem crescente.
+DICA: Use a função sort.-->

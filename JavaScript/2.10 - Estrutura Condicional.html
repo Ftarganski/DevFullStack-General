@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function promptId(mensagem, tenteNovamente) {
+            let msg = mensagem;
+            while (true) {
+                let retorno = parseInt(prompt(msg));
+                if (!isNaN(retorno)) return retorno;
+                msg = tenteNovamente;
+            }
+        }
+        function promptNotas(mensagem, tenteNovamente) {
+            let msg = mensagem;
+            while (true) {
+                let retorno = parseFloat(prompt(msg));
+                if (!isNaN(retorno) && retorno <= 100) return retorno;
+                msg = tenteNovamente;
+            }
+        }
+        let id = promptId("Digite seu número de matrícula:\n", "Por favor, digite um número para seu número de matrícula.\nTente novamente.\n");     
+        let prova1 = promptNotas("Digite sua nota na primeira prova:\n", "Por favor, digite um número para sua nota na primeira prova.\nTente novamente.\n");
+        let prova2 = promptNotas("Digite sua nota na segunda prova:\n", "Por favor, digite um número para sua nota na segunda prova.\nTente novamente.\n");
+        let prova3 = promptNotas("Digite sua nota na terceira prova:\n", "Por favor, digite um número para sua nota na terceira prova.\nTente novamente.\n");
+        let exercicios = promptNotas("Digite sua nota nos exercícios:\n", "Por favor, digite um número para sua nota nota nos exercícios.\nTente novamente.\n");
+   
+        const mediaFinal = (prova1 + (prova2 * 2) + (prova3 * 3)) / 7
+    
+        if (mediaFinal >= 90) {
+            alert(`O aluno com o registro ${id} foi aprovado com a média final de ${mediaFinal.toFixed(2)}. Sua notas intermediárias foram ${prova1}, ${prova2}, ${prova3} e ${exercicios}`)
+        }
+        else if (mediaFinal >= 75 && mediaFinal < 90) {
+            alert(`O aluno com o registro ${id} foi aprovado com a média final de ${mediaFinal.toFixed(2)}. Sua notas intermediárias foram ${prova1}, ${prova2}, ${prova3} e ${exercicios}`)
+        }
+        else if (mediaFinal >= 60 && mediaFinal < 75) {
+            alert(`O aluno com o registro ${id} foi aprovado com a média final de ${mediaFinal.toFixed(2)}. Sua notas intermediárias foram ${prova1}, ${prova2}, ${prova3} e ${exercicios}`)
+        }
+        else if (mediaFinal >= 40 && mediaFinal < 60) {
+            alert(`O aluno com o registro ${id} foi reprovado com a média final de ${mediaFinal.toFixed(2)}. Sua notas intermediárias foram ${prova1}, ${prova2}, ${prova3} e ${exercicios}`)
+        }
+        else if (mediaFinal < 40) {
+            alert(`O aluno com o registro ${id} foi reprovado com a média final de ${mediaFinal.toFixed(2)}. Sua notas intermediárias foram ${prova1}, ${prova2}, ${prova3} e ${exercicios}`)
+        }
+        else { }
+    </script>
+</body>
+
+</html>
+
+<!-- Escreva um algoritmo que leia o número de identificação, as 3 notas obtidas por um aluno nas
+3 verificações e a média dos exercícios que fazem parte da avaliação, e calcule a média de
+aproveitamento, usando a fórmula:
+MA = (nota1 + nota2 * 2 + nota3 * 3 + ME)/7
+
+A atribuição dos conceitos obedece a tabela abaixo. O algoritmo deve escrever o número do aluno,
+ suas notas, a média dos exercícios, a média de aproveitamento, o conceito correspondente e a
+ mensagem 'Aprovado' se o conceito for A, B ou C, e 'Reprovado' se o conceito for D ou E.
+
+Média de aproveitamento Conceito
+>= 90 A
+>= 75 e < 90 B
+>= 60 e < 75 C
+>= 40 e < 60 D
+< 40 E  
+
+DICA: Lembre-se que MA é o valor final e ME é a média dos exercícios, você precisará criar uma entrada
+ para cada nota e uma entrada para a ME que é a média do exercício.;
+
+-->

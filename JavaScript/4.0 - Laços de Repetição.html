@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let quantidade = prompt("Digite a quantidade de elementos que deseja inserir:").split(",")
+
+        let arrayDados = [];
+        for(var i = 0; i < quantidade; i++)
+        arrayDados.push(prompt(`Digite o ${i+1}\u00B0 elemento:`));
+ 
+        console.log(arrayDados.sort())
+        alert(`Os elementos inseridos foram transformados no array ${arrayDados.sort()}!`)
+    </script>
+</body>
+
+</html>
+
+<!-- Crie um script que pergunte quantos elementos o
+     usuário deseja inserir, coloque esses valores em um
+     array em ordem crescente. -->

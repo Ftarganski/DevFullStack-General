@@ -10,11 +10,32 @@
 
 <body>
     <script>
-       
-       
+        let etiqueta = prompt(`Digite o valor do produto em R$:`);
+        etiqueta = etiqueta.replace(",", ".");
+        let condicao = parseInt(prompt(`Digite a forma de pagamento, sendo 1 (à vista - dinheiro ou cheque), 2 (à vista no crédito), 3 (2x sem juros) e 4 (2x com juros)!`));
+        let valor = 0.0
 
+        if (condicao >= 5) {
+            alert(`Você deve escolher a forma de pagamento conforme orientado!`);
+        } 
+        else if (condicao == 1) {
+            valor = etiqueta * 0.9;
+            alert(`O valor final do produto é de R$ ${valor.toFixed(2).replace(".", ",")}`);
+        }
+        else if (condicao == 2) {
+            valor = etiqueta * 0.85;
+            alert(`O valor final do produto é de R$ ${valor.toFixed(2).replace(".", ",")}`);
+        }
+        else if (condicao == 3) {
+            valor = etiqueta;
+            alert(`O valor final do produto é de R$ ${valor.replace(".", ",")}`);
+        }
+        else if (condicao == 4) {
+            valor = etiqueta * 1.1;
+            alert(`O valor final do produto é de R$ ${valor.toFixed(2).replace(".", ",")}`);
+        }
+        else{}
     </script>
-
 </body>
 
 </html>
