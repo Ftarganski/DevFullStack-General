@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let idadeDigitada = 0;
+        let idades = [];
+        for (var i = 1; i <= 5; i++) {
+            idadeDigitada = prompt(`Digite a idade do aluno:`);
+            idades.push(idadeDigitada);
+        }
+        const faixa1 = idades.filter(faixaA);
+        function faixaA(idade) {
+            return idade <= 15;
+        }
+        const faixa2 = idades.filter(faixaB);
+        function faixaB(idade) {
+            return idade > 15 && idade <= 30;
+        }
+        const faixa3 = idades.filter(faixaC);
+        function faixaC(idade) {
+            return idade > 31 && idade <= 45;
+        }
+        const faixa4 = idades.filter(faixaD);
+        function faixaD(idade) {
+            return idade > 46 && idade <= 60;
+        }
+        const faixa5 = idades.filter(faixaE);
+        function faixaE(idade) {
+            return idade > 61;
+        }
+        let quantidadeA = faixa1.length;
+        let quantidadeB = faixa2.length;
+        let quantidadeC = faixa3.length;
+        let quantidadeD = faixa4.length;
+        let quantidadeE = faixa5.length;
+
+        alert(`Existem ${quantidadeA} pessoas com até 15 anos, ${((quantidadeA / 15) * 100).toFixed(2)}%\n${quantidadeB} pessoas entre 16 e 30 anos,\n${quantidadeC} pessoas entre 31 e 45 anos,\n${quantidadeD} pessoas entre 46 e 60 anos,\n${quantidadeE} pessoas acima dos 61 anos, ${((quantidadeE / 15) * 100).toFixed(2)}%`)
+
+    </script>
+</body>
+
+</html>
+<!-- Faça um script que receba a idade de 15 pessoas e que
+    calcule e mostre:
+a) A quantidade de pessoas em cada faixa etária;
+b) A percentagem de pessoas na primeira e na última faixa
+ etária, com relação ao total de pessoas: 
+
+Até 15 anos
+De 16 a 30 anos
+De 31 a 45 anos
+De 46 a 60 anos
+Acima de 61 anos
+
+DICA: Use o Array Filter para filtrar, pegue a variável de
+ retorno do filter e use nela o .length. Você precisará
+ fazer 5 filters um para cada faixa etária então haverá 
+ 5 variáveis recebendo filter do mesmo array de idades,
+ porém cada filter usa uma condicional específica de
+ faixa etária. -->

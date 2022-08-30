@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let idadeDigitada = 0;
+        let idades = [];
+        for (var i = 1; i <= 10; i++) {
+            idadeDigitada = prompt(`Digite a idade do aluno:`);
+            idades.push(idadeDigitada);
+        }
+        const maiores = idades.filter(adultos);
+        function adultos(idade) {
+            return idade >= 18;
+        }
+        let quantidade = maiores.length;
+        alert(`A quantidade de alunos maiores de 18 anos é de ${quantidade}, sendo que suas idades são ${maiores}`)      
+    </script>
+</body>
+
+</html>
+
+<!-- Faça um programa que receba a idade de dez pessoas
+     e que calcule e mostre a quantidade de pessoas com
+     idade maior ou igual a 18 anos.
+
+USE o Array filter para filtrar as idades.
+-->
