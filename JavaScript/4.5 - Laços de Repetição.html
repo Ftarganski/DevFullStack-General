@@ -10,7 +10,20 @@
 
 <body>
     <script>
-        
+        const number = parseInt(prompt(`Digite um número qualquer:`));
+        let pares = []
+        impares = []
+
+        for (let i = 1; i <= number; i++) {
+            if (i % 2 == 0) {
+                pares.push(i)
+            } else {
+                impares.push(i)
+            }
+        }
+        console.log(pares)
+        console.log(impares)
+        document.write(`O número digitado foi ${number}.<br>Os números pares são ${pares}.<br>Os números ímpares são ${impares}.`)
 
     </script>
 </body>
@@ -20,5 +33,4 @@
 <!-- Escreva um script que receba inteiro e mostra os 
     números pares e ímpares (separados), de 1 até esse 
     inteiro. 
-
 DICA: Use o operador módulo para te auxiliar aqui. -->

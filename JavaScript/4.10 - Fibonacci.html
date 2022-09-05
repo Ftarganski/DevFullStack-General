@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body>h4{
+        text-align: center;
+    }
+    body>div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    body>div>div{
+        display: block;
+        padding: 0 5px;
+        box-sizing: border-box;;
+    }
+</style>
+
+</head>
+
+<body>
+    <h4>A sequência Fibonacci solicitada é:</h4>
+        
+    <div>
+        <div id="descricao">
+        </div>
+        <div id="sequencia">
+        </div>
+        <div id="termos">
+        </div>
+    </div>
+
+    <script>
+        let quantidade = parseInt(prompt(`Digite a quantidade de termos desejado:`));
+        let fibonacci = [0, 1, 1];
+        let termo = "";
+        for (var i = 0; i < quantidade; i++) {
+            let size = fibonacci.length;
+            fibonacci.push(fibonacci[size - 1] + fibonacci[size - 2])
+        }
+        sequencia = (fibonacci.slice(0, -3))
+        termo = Array.from(Array(quantidade + 1).keys())
+        retorno = termo.shift()
+
+        document.getElementById("descricao").innerHTML = (Array(quantidade).fill("Termo")).join(`<br>`)
+        document.getElementById("sequencia").innerHTML = termo.join(`:<br>`) + ":"
+        document.getElementById("termos").innerHTML = sequencia.join(`<br>`)
+
+    </script>
+</body>
+
+</html>
+
+<!--
+  Utilizando o que foi aprendido em recursividade, crie um programa que gere a
+  sequência de fibonacci. Utilize como entrada (Parâmetro) da função um valor que
+  especifique o tamanho da sequência de fibonacci que deseja ser gerada.
+-->

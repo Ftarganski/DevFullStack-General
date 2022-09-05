@@ -10,17 +10,19 @@
 
 <body>
     <script>
+        let size = parseFloat(prompt(`Digite o tamanho deseado para seu conjunto:`));
+        let array = Array.apply(null, Array(size));
+
         function getRandom(min, max) {
             return Math.floor(Math.random() * (max - min + 1)) + min;
         }
-        let arrayNumber = [];
-        for (let i = 0; i < 10; i++) {
-            arrayNumber.push(getRandom(100, 999));
-        }
-        arrayNumber.sort();
 
-        console.log(arrayNumber)
-
+        let numbers = array.map((array) => {
+            let x = getRandom(0, 100);
+            return array = x
+        })
+            
+            alert(`O array gerado é:\n${numbers.sort()}`)
     </script>
 </body>
 

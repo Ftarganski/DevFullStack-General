@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function promptOption(mensagemOpt, tenteNovamenteOpt) {
+            let msg = mensagemOpt;
+            while (true) {
+                let retorno = parseFloat(prompt(msg));
+                if (!isNaN(retorno) && retorno < 4) return retorno;
+                msg = tenteNovamenteOpt;
+            }
+        }
+        function promptNotas(mensagem, tenteNovamente) {
+            let msg = mensagem;
+            while (true) {
+                let retorno = parseFloat(prompt(msg));
+                if (!isNaN(retorno) && retorno <= 100) return retorno;
+                msg = tenteNovamente;
+            }
+        }
+        function promptPesos(mensagem, tenteNovamente) {
+            let msg = mensagem;
+            while (true) {
+                let retorno = parseFloat(prompt(msg));
+                if (!isNaN(retorno) && retorno >=1 && retorno <= 3) return retorno;
+                msg = tenteNovamente;
+            }
+        }
+        let option = parseInt(promptOption(`Digite a opção desejada:\n\n1 - Média Aritmética\n2 - Média Ponderada\n3 - Sair`, `Digite a opção desejada:\n1 - Média Aritmética\n2 - Média Ponderada\n3 - Sair\n\nVocê deve digitar uma opção válida!\n`));
+        if (option === 1) {
+            let prova11 = promptNotas(`Digite a sua nota na primeira prova:\n`, `Por favor, digite um número de 0 a 100 para sua nota na primeira prova.\n\nTente novamente.\n`);
+            let prova12 = promptNotas(`Digite a sua nota na segunda prova:\n`, `Por favor, digite um número de 0 a 100 para sua nota na segunda prova.\n\nTente novamente.\n`);
+            let mediaArit = ((prova11 + prova12) / 2).toFixed(2)
+            document.write(`Sua média aritimética é ${mediaArit}`)
+        }
+        else if (option === 2) {
+            let prova21 = promptNotas(`Digite a sua nota na primeira prova:\n`, `Por favor, digite um número de 0 a 100 para sua nota na primeira prova.\n\nTente novamente.\n`);
+            let pesoProva21 = promptPesos(`Digite o peso da primeira prova (de 01 a 03):\n`, `Por favor, digite um número de 1 a 3 para o peso da sua primeira prova.\n\nTente novamente.\n`);
+            let prova22 = promptNotas(`Digite a sua nota na segunda prova:\n`, `Por favor, digite um número de 0 a 100 para sua nota na segunda prova.\n\nTente novamente.\n`);
+            let pesoProva22 = promptPesos(`Digite o peso da segunda prova (de 01 a 03):\n`, `Por favor, digite um número de 1 a 3 para o peso da sua segunda prova.\n\nTente novamente.\n`);
+            let prova23 = promptNotas(`Digite a sua nota na terceira prova:\n`, `Por favor, digite um número de 0 a 100 para sua nota na terceira prova.\n\nTente novamente.\n`);
+            let pesoProva23 = promptPesos(`Digite o peso da terceira prova (de 01 a 03):\n`, `Por favor, digite um número de 1 a 3 para o peso da sua terceira2 prova.\n\nTente novamente.\n`);
+            let mediaPonderada = (((prova21 * pesoProva21)+(prova22*pesoProva22)+(prova23*pesoProva23))/(pesoProva21+pesoProva22+pesoProva23)).toFixed(2);
+            document.write(`Sua média ponderada é ${mediaPonderada}`)
+        }
+        else if (option === 3) {
+            alert(`Agradecemos por ter utilizado o nosso sistema!`)
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- Aqui estamos em um exercício um pouco mais difícil, se sentir dificuldade, reassista as aulas antes de tentar fazê-lo.
+Faça um programa que apresente o menu de opções a seguir:  
+
+Menu de opções:  
+1. Média aritmética
+2. Média ponderada
+3. Sair  
+
+Digite a opção desejada:
+
+Na opção 1: receber duas notas, calcular e mostrar a média aritmética.
+Na opção 2: receber três notas e seus respectivos pesos, calcular e mostrar a média ponderada.
+Na opção 3: sair do programa.  
+Verifique a possibilidade de opção inválida, mostrando uma mensagem.   -->
