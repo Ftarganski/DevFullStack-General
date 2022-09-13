@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let number = "";
+        let faixa = [];
+        let complet = [];
+        function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        for (let i = 1; i <= 10; i++) {
+            number = getRandom(0, 120)
+            complet.push(number);
+        }
+        function serie(x) {
+            return x >= 30 && x <= 90;
+        }
+        faixa = complet.filter(serie)
+        document.write(`Os números sorteados foram ${complet.sort()} e dentre os quais os seguintes números estão dentro da faixa numeral de 30 a 90: ${faixa.sort()}`)
+    </script>
+</body>
+
+</html>
+
+<!--
+  Crie um jogo onde o usuário deverá digitar um valor no prompt para advinhar qual o número escondido.
+  Utilize funções para deixar seu código mais organizado.
+-->

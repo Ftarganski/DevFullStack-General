@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body>h4,
+    body>h3 {
+      text-align: center;
+    }
+    #estoque {
+      font-size: 80%;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h4>Carrinho de Compras</h4>
+    <div id="carrinho">
+    </div>
+    <h5>Códigos de barra para baixar estoque</h5>
+    <div id="estoque">
+    </div>
+  </div>
+
+  <script>
+    //classe "produto" com o construtor
+    class Produto {
+      constructor(nome, codeBar, preco, quantidade) {
+        this.nome = nome;
+        this.codeBar = codeBar;
+        this.preco = preco;
+        this.quantidade = quantidade;
+      }
+    }
+    //classe "carrinho"
+    class Carrinho {
+      // constructor() {}
+      addProduto(nome, codeBar, preco, quantidade) {
+        const produto = new Produto(nome, codeBar, preco, quantidade);
+        return produto
+      }
+    }
+
+    //adição dos produtos
+    let escolha = parseInt(prompt('Digite quantos produtos deseja comprar:'))
+    let carrinho = [];
+
+    for (let i = 0; i < escolha; i++) {
+      let nomeProduto = prompt('Digite o nome do produto:')
+      let codigoProduto = parseInt(prompt('Digite o código do produto:')),
+        precoProduto = parseFloat(prompt('Digite o preço do produto: ').replace(',', '.')).toFixed(2),
+        quantidadeProduto = parseInt(prompt('Digite a quantidade desejada:'));
+
+      produto = new Carrinho();
+      carrinho.push(produto.addProduto(nomeProduto, codigoProduto, precoProduto, quantidadeProduto))
+
+    }
+
+    //looping de exibição
+    let resumo = "";
+    totalCompra = 0;
+    codeResumo = "";
+    for (let i = 0; i < carrinho.length; i++) {
+      resumo += `${carrinho[i].nome} <br> ${carrinho[i].quantidade} un x R$ ${carrinho[i].preco} = R$ ${parseFloat(carrinho[i].preco * carrinho[i].quantidade).toFixed(2)}<br>`
+      totalCompra += carrinho[i].preco * carrinho[i].quantidade
+      codeResumo += `${carrinho[i].quantidade} un x ${carrinho[i].codeBar}<br>`
+    }
+
+       document.getElementById("carrinho").innerHTML = resumo.toUpperCase()
+    document.getElementById("estoque").innerHTML = codeResumo
+
+  </script>
+</body>
+
+</html>
+
+
+<!-- 
+  Utilizando orientação a objetos crie uma classe chamada Produto e uma classe chamada Carrinho.
+
+  O programa basicamente deverá adicionar x produtos no carrinho (Use laços de repetição para isso).
+  As informações que devem ser solicitadas para cada produto são o código de barras para que 
+  seja possível identificar qual é o produto e a quantidade que será adicionada ao carrinho. 
+  Com essas informações o programa deverá exibir o extrado com o descritivo dos produtos e o 
+  valor total da compra. -->
