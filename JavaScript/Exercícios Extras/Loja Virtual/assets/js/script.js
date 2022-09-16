@@ -42,6 +42,7 @@ tbody.innerText = '';
       let iconErase = document.createElement('i')
       iconErase.className = ('fa-solid fa-trash');
       iconErase.setAttribute("onclick","produto.deletar("+ this.arrayProdutos[i].id +")");
+      
       td_acao.appendChild(iconEdit);
       td_acao.appendChild(iconErase);
     }
