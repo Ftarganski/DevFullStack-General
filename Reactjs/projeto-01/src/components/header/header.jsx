@@ -1,15 +1,19 @@
 import React from "react";
-import './header.css';
+import "./header.css";
 
-
-//Criando o componente
 const Header = () => {
-    return(
-        <>
-        <h2>Aqui o Header 1</h2>
-        <h2>Aqui o Header 2</h2>
-        </>
-    )
-}
+  return (
+    <div>
+      <h2 className="tittle">Aqui Título</h2>
+      <h3 className="subTittle">Aqui Subitítulo</h3>
+      <ul className="menu">
+        <li>Home</li>
+        <li>Sobre</li>
+        <li>Cadastro</li>
+        <li>Teste</li>
+      </ul>
+    </div>
+  );
+};
 
-export default Header
+export default Header;
