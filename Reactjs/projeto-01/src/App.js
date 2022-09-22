@@ -1,31 +1,16 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/header/header";
-import Sobre from "./components/sobre/sobre";
-import Cadastro from "./components/cadastro/cadastro";
 import Footer from "./components/footer/footer";
-import { useState } from "react";
 
-function App() {
-  //Estado do componente (estado, método)
-  const [value, setValue] = useState(0);
-
-  //Aqui importamos os elementos
+const App = ({children}) => {
   return (
     <>
-      <Header value={value} />
-      {/* <div className="App">
-        <img src={logo} className="App-logo"/>
-        <p>{value}</p>
-        <button onClick={() => setValue(value + 1)}>+</button>
-        <button onClick={() => setValue(value - 1)}>-</button>
-      </div> */}
-      <Sobre />
-      <Cadastro />
+      <Header />
+      {children}
       <Footer />
     </>
   );
-}
+};
 
 export default App;
 
