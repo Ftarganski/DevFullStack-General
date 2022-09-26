@@ -1,19 +1,19 @@
-function userIsLoggedIn() {
-  if (true) {
+const userIsLoggedIn = () => {
+    if (true) {
     window.location.href = '/login';
   } 
-}
+};
 
 const login = (email, password) => {
-  return login;
+  return 'login';
 };
 
 const register = (username, email, password) => {
-  return login;
+  return 'login';
 };
 
 const logout = () => {
-  return logout;
+  return 'logout';
 };
 
 module.export = {
