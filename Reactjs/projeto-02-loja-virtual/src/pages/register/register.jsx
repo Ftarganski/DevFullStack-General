@@ -13,8 +13,9 @@ import {
   FormControl,
   InputLabel,
 } from "@mui/material";
-import LoginIcon from '@mui/icons-material/Login';
-import { BuildTwoTone, Visibility } from "@mui/icons-material";
+import PedalBikeIcon from "@mui/icons-material/PedalBike";
+import DirectionsBikeIcon from "@mui/icons-material/DirectionsBike";
+import { Visibility } from "@mui/icons-material";
 import { VisibilityOff } from "@mui/icons-material";
 
 const Register = () => {
@@ -33,19 +34,30 @@ const Register = () => {
         xs={0}
         md={7}
         lg={8}
+        style={{
+          marginTop: "25px",
+        }}
       >
         <Stack
           spacing={2}
           style={{
             height: "100%",
             justifyContent: "center",
-            alignIten: "center",
+            alignItem: "center",
           }}
         >
-          <img src={cover} style={{ width: "100vw" }} alt="Logo" />
+          <img src={cover} style={{ width: "50vw" }} alt="Logo" />
         </Stack>
       </Grid>
-      <Grid item xs={12} md={5} lg={4}>
+      <Grid
+        item
+        xs={12}
+        md={5}
+        lg={4}
+        style={{
+          marginTop: "25px",
+        }}
+      >
         <Stack
           spacing={2}
           style={{
@@ -57,7 +69,7 @@ const Register = () => {
             boxSizing: "border-box",
           }}
         >
-          <img src={logo} style={{ width: "150px" }} alt="Logo" />
+          <img src={logo} style={{ width: "120px" }} alt="Logo" />
           <h1>Cadastre-se</h1>
           <Grid container>
             <Grid item xs={12} sx={{ marginBottom: "16px" }}>
@@ -107,21 +119,28 @@ const Register = () => {
                 variant="outlined"
               />
             </Grid>
-            <Grid item xs={12} sx={{ margimBottom: "16px" }}>
+
+            <Grid item xs={12} sx={{ marginTop: "16px" }}>
               <Button
                 fullWidth="true"
                 variant="contained"
-                endIcon={<LoginIcon />}
+                endIcon={<PedalBikeIcon />}
               >
                 Cadastrar
               </Button>
             </Grid>
-            <Link
-              style={{ textAlign: "center", display: "block", width: "100%" }}
-              to="/login"
-            >
-              Entrar
-            </Link>
+
+            <Grid item xs={12} sx={{ marginTop: "16px" }}>
+              <Link to="/login">
+                <Button
+                  fullWidth="true"
+                  variant="contained"
+                  endIcon={<DirectionsBikeIcon />}
+                >
+                  Entrar
+                </Button>
+              </Link>
+            </Grid>
           </Grid>
         </Stack>
       </Grid>
