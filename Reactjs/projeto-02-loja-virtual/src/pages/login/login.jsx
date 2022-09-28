@@ -13,7 +13,8 @@ import {
   FormControl,
   InputLabel,
 } from "@mui/material";
-import LoginIcon from "@mui/icons-material/Login";
+import DirectionsBikeIcon from "@mui/icons-material/DirectionsBike";
+import PedalBikeIcon from "@mui/icons-material/PedalBike";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import { Link } from "react-router-dom";
@@ -27,14 +28,7 @@ const Login = () => {
 
   return (
     <Grid container spacing={2} style={{ height: "100vh" }}>
-      <Grid
-        classname="leftSide"
-        item
-        sx={{ padding: "10px", boxSizing: "border-box" }}
-        xs={0}
-        md={7}
-        lg={8}
-      >
+      <Grid classname="leftSide" item sx={0} xs={0} md={7} lg={8}>
         <Stack
           spacing={2}
           style={{
@@ -66,7 +60,7 @@ const Login = () => {
             alt="Logo"
           />
 
-          <h1>Entre com seu usuário</h1>
+          <h1>Partiu pedal?</h1>
           <Grid container>
             <Grid
               item
@@ -76,7 +70,7 @@ const Login = () => {
               }}
             >
               <TextField
-                fullwidth="true"
+                fullWidth="true"
                 label="E-mail"
                 type="email"
                 variant="outlined"
@@ -119,19 +113,25 @@ const Login = () => {
               }}
             >
               <Button
-                fullwidth="true"
+                fullWidth="true"
                 variant="contained"
-                endIcon={<LoginIcon />}
+                endIcon={<DirectionsBikeIcon />}
               >
                 Entrar
               </Button>
             </Grid>
-            <Link
-              style={{ textAlign: "center", display: "block", width: "100%" }}
-              to="/register"
-            >
-              Cadastrar
-            </Link>
+
+            <Grid item xs={12} sx={{ marginBottom: "16px" }}>
+              <Link to="/register">
+                <Button
+                  fullWidth="true"
+                  variant="contained"
+                  endIcon={<PedalBikeIcon />}
+                >
+                  Cadastrar
+                </Button>
+              </Link>
+            </Grid>
           </Grid>
         </Stack>
       </Grid>

@@ -26,11 +26,11 @@ const Register = () => {
   };
 
   return (
-    <Grid container spacing={2} styla={{ hight: "100vh" }}>
+    <Grid container spacing={2} styla={{ height: "100vh"}}>
       <Grid
         className="leftSide"
         item
-        sx={{ padding: "10px", boxSizing: "border-box" }}
+        sx={0}
         xs={0}
         md={7}
         lg={8}
@@ -46,7 +46,7 @@ const Register = () => {
             alignItem: "center",
           }}
         >
-          <img src={cover} style={{ width: "50vw" }} alt="Logo" />
+          <img src={cover} style={{ width: "100%" }} alt="Logo" />
         </Stack>
       </Grid>
       <Grid
@@ -70,7 +70,7 @@ const Register = () => {
           }}
         >
           <img src={logo} style={{ width: "120px" }} alt="Logo" />
-          <h1>Cadastre-se</h1>
+          <h1>Bora pedalar conosco!</h1>
           <Grid container>
             <Grid item xs={12} sx={{ marginBottom: "16px" }}>
               <TextField
@@ -130,7 +130,7 @@ const Register = () => {
               </Button>
             </Grid>
 
-            <Grid item xs={12} sx={{ marginTop: "16px" }}>
+            <Grid item xs={12} sx={{ marginTop: "16px", marginBottom: "16px" }}>
               <Link to="/login">
                 <Button
                   fullWidth="true"

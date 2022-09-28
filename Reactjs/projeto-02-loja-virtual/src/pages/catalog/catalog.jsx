@@ -2,6 +2,7 @@ import React from "react";
 import { products, categories } from "./products";
 import { Grid, Typography, Button } from "@mui/material";
 import { Link } from "react-router-dom";
+
 const Catalog = () => {
   return (
     <Grid
@@ -24,7 +25,7 @@ const Catalog = () => {
             lg={3}
             sx={{
               position: "relative",
-              paddingTop: "0!important",
+              paddingTop: "0 !important",
               marginBottom: "32px",
             }}
           >
@@ -43,7 +44,8 @@ const Catalog = () => {
             >
               10%
             </span>
-            <img src={products[id].image} />
+
+            <img src={products[id].image} style={{ width: "100%" }} />
 
             {products[id].categories.map((categoryId) => {
               return (
@@ -89,8 +91,8 @@ const Catalog = () => {
               {products[id].description.substring(0, 100)}...
             </Typography>
 
-            <Link to={"../product/" + id}>
-              <Button fullWidth="true" variant="contained">
+            <Link to={"../product" + id}>
+              <Button fullWidth variant="contained">
                 Ver Produto
               </Button>
             </Link>
