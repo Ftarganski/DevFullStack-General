@@ -9,10 +9,10 @@
 }
 
 .imageSide > .imageSide__image .imageSide__image-item{
-  width: 100%;
-  height: 600px;
+  
+  height: 500px;
   background-position: center;
-  background-size: cover;
+  background-size:contain ; 
   background-repeat: no-repeat;
 }
 
