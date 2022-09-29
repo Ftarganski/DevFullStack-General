@@ -13,6 +13,7 @@ import {
   TextField,
 } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 
 const Cart = () => {
   const totals = [
@@ -227,7 +228,7 @@ const Cart = () => {
             </li>
           </ul>
           <Link to="/checkout">
-            <Button variant="contained" fullWidth>
+            <Button style={{backgroundColor:"#000"}} variant="contained" fullWidth  startIcon={<AttachMoneyIcon/>}>
               Confirmar Pagamento
             </Button>
           </Link>

@@ -25,6 +25,8 @@ function App() {
         <Toolbar
           style={{
             justifyContent: "space-between",
+            backgroundColor:"#000"   
+            ,
           }}
         >
           <Typography variant="h6" component="h2">

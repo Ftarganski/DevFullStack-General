@@ -38,6 +38,11 @@
   margin-bottom: 12px;
 }
 
+.productItem .productItem__categories > div{
+  background-color: #81a9d1;
+  color: #fff;
+}
+
 .productItem__quantity input{
   width: 30px;
 }
@@ -70,19 +75,17 @@
 
 .productItem .productItem__quantity input::-webkit-outer-spin-button,
 .productItem .productItem__quantity input::-webkit-inner-spin-button {
-  /* display: none; <- Crashes Chrome on hover */
   -webkit-appearance: none;
   margin: 0;
-  /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 .productItem .productItem__quantity input[type=number] {
   -moz-appearance: textfield;
-  /* Firefox */
 }
 
 
 .productItem .productItem__buy{
+  background-color: #000
 }
 
 @media screen and (min-width: 1297px){
