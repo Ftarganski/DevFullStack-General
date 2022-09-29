@@ -78,7 +78,7 @@ const Product = () => {
                     <AddIcon color='primary'/>
                 </IconButton>
             </div>
-            <Button variant="contained" size="large" endIcon={<ShoppingCartIcon />} lassName="productItem__buy">Comprar</Button>
+            <Button variant="contained" size="large" endIcon={<ShoppingCartIcon />} className="productItem__buy">Comprar</Button>
         </Grid>
     </Grid>
 
